@@ -11,7 +11,6 @@ p5.js
 - One button --> shows a story and prints text of the audio (array of all the stuff, picks random #)
 - Pair audio with random picture
 - About us
-- Instructions
 - Archive of all the stories and audio
 
 If have time,

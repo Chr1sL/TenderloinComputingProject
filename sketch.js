@@ -12,17 +12,17 @@ var audiomp3 = [];
 var picture = [];
 function preload() {
   for (let i = 1; i < 209; i++) {
-    paper[i-1] = loadImage(`tenderloin/paperstories/paper(${i}).jpg`);
+    paper[i-1] = loadImage(`paperstories/paper(${i}).jpg`);
   }
   //FILES WAV 17-23 ARE CORRUPT
   for (let i = 1; i < 17; i++) {
-    audiowav[i-1] = loadSound(`tenderloin/audiostories/audio(${i}).wav`);
+    audiowav[i-1] = loadSound(`audiostories/audio(${i}).wav`);
   }
   for (let i = 1; i < 79; i++) {
-    audiomp3[i-1] = loadSound(`tenderloin/audiostories/audio(${i}).mp3`);
+    audiomp3[i-1] = loadSound(`audiostories/audio(${i}).mp3`);
   }
   for (let i = 1; i < 64; i++) {
-    picture[i-1] = loadImage(`tenderloin/Tenderloinpictures/picture(${i}).jpg`);
+    picture[i-1] = loadImage(`Tenderloinpictures/picture(${i}).jpg`);
   }
   //flower = loadImage('myImg.png');
   //paper = loadImage('button.png');

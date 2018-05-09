@@ -15,8 +15,11 @@ function preload() {
     paper[i-1] = loadImage(`paperstories/paper(${i}).jpg`);
   }
   //FILES WAV 17-23 ARE CORRUPT
+  //TAKE OUT WAV FILES 2 AND 5 (too big to upload to github)
   for (let i = 1; i < 17; i++) {
-    audiowav[i-1] = loadSound(`audiostories/audio(${i}).wav`);
+    if (i != 2 && i != 5){
+      audiowav[i-1] = loadSound(`audiostories/audio(${i}).wav`);
+    }
   }
   for (let i = 1; i < 79; i++) {
     audiomp3[i-1] = loadSound(`audiostories/audio(${i}).mp3`);

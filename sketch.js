@@ -7,30 +7,21 @@ function draw (){
 var paper = [];
 var flower;
 var all = [];
-var audiowav = [];
 var audiomp3 = [];
 var picture = [];
 function preload() {
   for (let i = 1; i < 209; i++) {
     paper[i-1] = loadImage(`paperstories/paper(${i}).jpg`);
   }
-  //FILES WAV 17-23 ARE CORRUPT
-  //TAKE OUT WAV FILES 2 AND 5 (too big to upload to github)
-  for (let i = 1; i < 17; i++) {
-    if (i != 2 && i != 5){
-      audiowav[i-1] = loadSound(`audiostories/audio(${i}).wav`);
-    }
-  }
-  for (let i = 1; i < 79; i++) {
-    audiomp3[i-1] = loadSound(`audiostories/audio(${i}).mp3`);
+  for (let i = 1; i < 94; i++) {
+    audiomp3[i-1] = loadSound(`audiostories/Audio(${i}).mp3`);
   }
   for (let i = 1; i < 64; i++) {
     picture[i-1] = loadImage(`Tenderloinpictures/picture(${i}).jpg`);
   }
   //flower = loadImage('myImg.png');
   //paper = loadImage('button.png');
-  all = paper.concat(audiowav);
-  all = all.concat(audiomp3);
+  all = paper.concat(audiomp3);
 }
 
 var button1;
@@ -83,14 +74,13 @@ function changeBG() {
   //FIND WAY TO REMOVE THE IMAGES THAT ARE ALREADY SHOWN SO THEY DONOT SHOW UNDER THE NEW STUFF
   button1.hide();
   button3.show();
-  num = Math.floor((Math.random() * 306) + 0);
+  num = Math.floor((Math.random() * 304) + 0);
   //image(all[num], 0, 0, (378.8*1.2), (478*1.2));
   if (num >= 0 && num <= 208){
     //if num is between or equal to 0-9, it is a paper story
     button2.hide();
     present = image(all[num], windowWidth/2 - (378.8*1.2)/2, windowHeight/2 - 270, (378.8*1.2), (478*1.2));
-  } else if (num >= 209 && num <= 305){
-    //if num between 10 and 19, it is audiowav
+  } else if (num >= 209 && num <= 303){
     button2.show();
     song = all[num];
     num1 = Math.floor((Math.random() * 10) + 0);

@@ -70,7 +70,7 @@ var present;
 // image(paper[num], 0, 0, (378.8*1.2), (478*1.2));
 function changeBG() {
   song = all[212];
-  song.stop();
+  song.pause();
   
   noStroke();
   color(255);

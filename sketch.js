@@ -69,6 +69,9 @@ var num1;
 var present;
 // image(paper[num], 0, 0, (378.8*1.2), (478*1.2));
 function changeBG() {
+  song = all[0];
+  song.stop();
+  
   noStroke();
   color(255);
   rect(0, 0, windowWidth, windowHeight);

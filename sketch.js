@@ -13,7 +13,8 @@ function preload() {
   for (let i = 1; i < 209; i++) {
     paper[i-1] = loadImage(`paperstories/paper(${i}).jpg`);
   }
-  for (let i = 1; i < 94; i++) {
+  //94
+  for (let i = 1; i < 6; i++) {
     audiomp3[i-1] = loadSound(`audiostories/Audio(${i}).mp3`);
   }
   for (let i = 1; i < 64; i++) {
@@ -74,7 +75,8 @@ function changeBG() {
   //FIND WAY TO REMOVE THE IMAGES THAT ARE ALREADY SHOWN SO THEY DONOT SHOW UNDER THE NEW STUFF
   button1.hide();
   button3.show();
-  num = Math.floor((Math.random() * 304) + 0);
+  //304
+  num = Math.floor((Math.random() * 216) + 0);
   //image(all[num], 0, 0, (378.8*1.2), (478*1.2));
   if (num >= 0 && num <= 208){
     //if num is between or equal to 0-9, it is a paper story

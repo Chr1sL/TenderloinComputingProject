@@ -14,7 +14,7 @@ function preload() {
     paper[i-1] = loadImage(`paperstories/paper(${i}).jpg`);
   }
   //94
-  for (let i = 1; i < 6; i++) {
+  for (let i = 1; i < 94; i++) {
     audiomp3[i-1] = loadSound(`audiostories/Audio(${i}).mp3`);
   }
   for (let i = 1; i < 64; i++) {

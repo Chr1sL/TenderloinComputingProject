@@ -50,11 +50,11 @@ function setup() {
   button3.mousePressed(changeBG);
   button3.hide();
   
-  backButton = createButton("back");
-  backButton.size(110,90);
-  backButton.position(windowWidth/2 - 1440/4 + 215, windowHeight/2 - 400);
-  backButton.mousePressed(back);
-  backButton.hide();
+//   backButton = createButton("back");
+//   backButton.size(110,90);
+//   backButton.position(windowWidth/2 - 1440/4 + 215, windowHeight/2 - 400);
+//   backButton.mousePressed(back);
+//   backButton.hide();
 }
 
 function back() {
@@ -88,7 +88,7 @@ function changeBG() {
   rect(0, 0, windowWidth, windowHeight);
   button1.hide();
   button3.show();
-  backButton.show();
+  //backButton.show();
   //304
   num = Math.floor((Math.random() * 216) + 0);
   //image(all[num], 0, 0, (378.8*1.2), (478*1.2));

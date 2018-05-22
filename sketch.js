@@ -38,7 +38,7 @@ function setup() {
   button1.position(windowWidth/2 - 150, windowHeight/2 - 150);
   button1.mousePressed(changeBG);
 
-  button2 = createButton("play");
+  button2 = createButton("pause");
   button2.size(80, 60);
   button2.position(windowWidth/2 - 1440/4 + 10, windowHeight/2 - 260);
   button2.hide();

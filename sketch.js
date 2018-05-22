@@ -85,7 +85,7 @@ function changeBG() {
   } else if (num >= 209 && num <= 303){
     button2.show();
     song = all[num];
-    //song.play();
+    song.play();
     num1 = Math.floor((Math.random() * 10) + 0);
     present = image(picture[num1], windowWidth/2 - 1440/4, windowHeight/2 - 270, 1440/2, 960/2);
   }

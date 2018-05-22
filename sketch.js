@@ -51,8 +51,8 @@ function setup() {
   button3.hide();
   
   backButton = createButton("back");
-  backButton.size(110,110);
-  backButton.position(windowWidth/2 - 1440/4 + 315, windowHeight/2 - 400);
+  backButton.size(110,90);
+  backButton.position(windowWidth/2 - 1440/4 + 215, windowHeight/2 - 400);
   backButton.mousePressed(back);
   backButton.hide();
 }

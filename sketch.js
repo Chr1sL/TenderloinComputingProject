@@ -86,7 +86,6 @@ function changeBG() {
   noStroke();
   color(255);
   rect(0, 0, windowWidth, windowHeight);
-  //FIND WAY TO REMOVE THE IMAGES THAT ARE ALREADY SHOWN SO THEY DONOT SHOW UNDER THE NEW STUFF
   button1.hide();
   button3.show();
   backButton.show();

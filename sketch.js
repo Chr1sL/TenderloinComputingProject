@@ -28,6 +28,7 @@ function preload() {
 var button1;
 var button2;
 var button3;
+var backButton;
 function setup() {
   createCanvas(windowWidth, windowHeight);
   background(255);
@@ -48,6 +49,16 @@ function setup() {
   button3.position(windowWidth/2 - 1440/4 + 315, windowHeight/2 - 380);
   button3.mousePressed(changeBG);
   button3.hide();
+  
+  button3 = createButton("back");
+  button3.size(110,110);
+  button3.position(windowWidth/2 - 1440/4 + 315, windowHeight/2);
+  button3.mousePressed(back);
+  button3.hide();
+}
+
+function back(){
+  
 }
 
 function togglePlaying() {
@@ -69,6 +80,9 @@ var num1;
 var present;
 // image(paper[num], 0, 0, (378.8*1.2), (478*1.2));
 function changeBG() {
+  song = all[116];
+  song.pause();
+  
   noStroke();
   color(255);
   rect(0, 0, windowWidth, windowHeight);
@@ -85,7 +99,7 @@ function changeBG() {
   } else if (num >= 209 && num <= 303){
     button2.show();
     song = all[num];
-    song.play();
+    //song.play();
     num1 = Math.floor((Math.random() * 10) + 0);
     present = image(picture[num1], windowWidth/2 - 1440/4, windowHeight/2 - 270, 1440/2, 960/2);
   }

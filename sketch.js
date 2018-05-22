@@ -52,12 +52,12 @@ function setup() {
   
   backButton = createButton("back");
   backButton.size(110,110);
-  backButton.position(windowWidth/2 - 1440/4 + 315, windowHeight/2);
+  backButton.position(windowWidth/2 - 1440/4 + 315, windowHeight/2 - 400);
   backButton.mousePressed(back);
   backButton.hide();
 }
 
-function back(){
+function back() {
   
 }
 
@@ -80,7 +80,7 @@ var num1;
 var present;
 // image(paper[num], 0, 0, (378.8*1.2), (478*1.2));
 function changeBG() {
-  song = all[116];
+  song = all[270];
   song.pause();
   
   noStroke();

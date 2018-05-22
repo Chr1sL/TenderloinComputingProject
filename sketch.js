@@ -50,11 +50,11 @@ function setup() {
   button3.mousePressed(changeBG);
   button3.hide();
   
-  button3 = createButton("back");
-  button3.size(110,110);
-  button3.position(windowWidth/2 - 1440/4 + 315, windowHeight/2);
-  button3.mousePressed(back);
-  button3.hide();
+  backButton = createButton("back");
+  backButton.size(110,110);
+  backButton.position(windowWidth/2 - 1440/4 + 315, windowHeight/2);
+  backButton.mousePressed(back);
+  backButton.hide();
 }
 
 function back(){
@@ -89,6 +89,7 @@ function changeBG() {
   //FIND WAY TO REMOVE THE IMAGES THAT ARE ALREADY SHOWN SO THEY DONOT SHOW UNDER THE NEW STUFF
   button1.hide();
   button3.show();
+  backButton.show();
   //304
   num = Math.floor((Math.random() * 216) + 0);
   //image(all[num], 0, 0, (378.8*1.2), (478*1.2));
